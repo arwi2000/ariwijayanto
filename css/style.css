@@ -1,0 +1,144 @@
+
+/* General Body Styles */
+body {
+    font-family: 'Georgia', serif; /* Use a serif font for an article feel */
+    line-height: 1.8;
+    color: #333;
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40 !important; /* Darker header */
+    padding: 3rem 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* More distinctive font for name */
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .lead {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #e2e6ea;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.card-title a {
+    color: #007bff; /* Link color */
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.card-title a:hover {
+    color: #0056b3;
+}
+
+/* Article Content Specifics */
+.article-content {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05);
+}
+
+.article-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #212529;
+    margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #343a40;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.article-content p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-content ul,
+.article-content ol {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.article-content pre {
+    background-color: #e9ecef;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-content code {
+    color: #c82333; /* For inline code */
+}
+
+.article-content pre code {
+    color: #333; /* For block code */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #212529 !important; /* Even darker footer */
+    color: #adb5bd;
+    padding: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .article-content {
+        padding: 2rem;
+    }
+    .article-content h1 {
+        font-size: 2.2rem;
+    }
+    .article-content h2 {
+        font-size: 1.8rem;
+    }
+}
